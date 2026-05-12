@@ -1,0 +1,64 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: bisque;
+}
+
+header ul li {
+    list-style: none;
+    border-bottom: 4px solid bisque;
+    border-top: 4px solid bisque;
+}
+
+header ul li:hover {
+    background-color: black;
+    border-bottom: 4px solid black;
+    border-top: 4px solid black;
+    transition: 0.7s;
+}
+
+header a:link, a:visited {
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+header a:hover {
+    color: bisque;
+}
+
+.box {
+    border: none;
+    height: 200px;
+    padding: 10px;
+    background-image: url(../img/iftm-horizontal-uberlandiacentro.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+body {
+    background-color: white;
+}
+
+main {
+    margin: 100px;
+}
+
+main section{
+    color: white;
+    background-color: black;
+}
+
+main section:nth-child(even) {
+    color: black;
+    background-color: lightgray;
+}
