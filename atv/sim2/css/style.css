@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+button {
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    padding: 10px 30px;
+}
+
+button:hover {
+    background-color: orangered;
+}
+
+.btn1 {
+    background-color: darkblue;
+}
+
+.menu {
+    background-color: darkblue;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    padding: 20px;
+}
+
+.menu li {
+    font-weight: bold;
+    margin: 5px 15px;
+}
+
+.secao1:nth-of-type(1) {
+    background-image: url('../img/topo.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    width: 100%;
+}
+
+section:nth-of-type(even) {
+    background-color: #dddddd;
+}
+
+section:nth-of-type(odd) {
+    background-color: white;
+}
+
+section {
+    margin: auto;
+}
+
+section>div {
+    padding: 30px;
+}
+
+.uber div h1,
+.uber div h2,
+.uber div p,
+.secao2 div h2,
+.secao2 div p,
+.secao2 div h3,
+.secao3 div div p,
+.secao3 div div img,
+.secao4 div div h2,
+.secao5 div h2,
+.secao5 div p,
+.secao5 div button,
+.secao6 div div h2,
+.secao6 div div p,
+.secao6 div div button,
+.secao6 div div img {
+    margin-bottom: 20px;
+}
+
+.secao3>div {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.secao3>div>div {
+    text-align: center;
+}
+
+.secao3 div div p {
+    text-align: justify;
+}
+
+.secao3 img,
+.secao6 img {
+    width: 100%;
+}
+
+.secao6>div>div:nth-of-type(2) {
+    text-align: center;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 50px;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    section {
+        padding: 30px;
+        width: 1200px;
+    }
+
+    .menu li {
+        margin: 5px 40px;
+    }
+
+    .secao3>div {
+        flex-direction: row;
+    }
+
+    .secao3 img {
+        width: 90%;
+    }
+
+    .secao6>div {
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+        text-align: justify;
+
+    }
+
+    .secao6>div>div {
+        width: 50%;
+    }
+}
